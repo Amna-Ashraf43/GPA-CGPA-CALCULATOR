@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GPA & CGPA Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎓 GPA & CGPA Calculator</h1>
+
+<p class="subtitle">
+Calculate your GPA and CGPA instantly.
+</p>
+
+<!-- GPA SECTION -->
+
+<div class="card">
+
+<h2>📚 GPA Calculator</h2>
+
+<div id="subjects">
+
+<div class="subject">
+<input type="text" placeholder="Subject 1">
+<input type="number" id="marks1" placeholder="Marks (0-100)" oninput="calculateGPA()">
+<input type="number" id="credit1" placeholder="Credit Hours" oninput="calculateGPA()">
+</div>
+
+<div class="subject">
+<input type="text" placeholder="Subject 2">
+<input type="number" id="marks2" placeholder="Marks (0-100)" oninput="calculateGPA()">
+<input type="number" id="credit2" placeholder="Credit Hours" oninput="calculateGPA()">
+</div>
+
+<div class="subject">
+<input type="text" placeholder="Subject 3">
+<input type="number" id="marks3" placeholder="Marks (0-100)" oninput="calculateGPA()">
+<input type="number" id="credit3" placeholder="Credit Hours" oninput="calculateGPA()">
+</div>
+
+<div class="subject">
+<input type="text" placeholder="Subject 4">
+<input type="number" id="marks4" placeholder="Marks (0-100)" oninput="calculateGPA()">
+<input type="number" id="credit4" placeholder="Credit Hours" oninput="calculateGPA()">
+</div>
+
+<div class="subject">
+<input type="text" placeholder="Subject 5">
+<input type="number" id="marks5" placeholder="Marks (0-100)" oninput="calculateGPA()">
+<input type="number" id="credit5" placeholder="Credit Hours" oninput="calculateGPA()">
+</div>
+
+<div class="subject">
+<input type="text" placeholder="Subject 6">
+<input type="number" id="marks6" placeholder="Marks (0-100)" oninput="calculateGPA()">
+<input type="number" id="credit6" placeholder="Credit Hours" oninput="calculateGPA()">
+</div>
+
+<div class="subject">
+<input type="text" placeholder="Subject 7">
+<input type="number" id="marks7" placeholder="Marks (0-100)" oninput="calculateGPA()">
+<input type="number" id="credit7" placeholder="Credit Hours" oninput="calculateGPA()">
+</div>
+
+
+
+</div>
+
+<button onclick="addSubject()">+ Add Subject</button>
+
+<div class="result-box">
+
+<p>Total Credit Hours</p>
+
+<h3 id="totalCredit">
+0
+</h3>
+
+<p>Your GPA</p>
+
+<h2 id="result">
+0.00
+</h2>
+
+</div>
+
+</div>
+
+<!-- CGPA SECTION -->
+
+<div class="card">
+
+<h2>🎓 CGPA Calculator</h2>
+
+<input type="number" id="semester1" placeholder="Semester 1 GPA" step="0.01" oninput="calculateCGPA()">
+
+<input type="number" id="semester2" placeholder="Semester 2 GPA" step="0.01" oninput="calculateCGPA()">
+
+<input type="number" id="semester3" placeholder="Semester 3 GPA" step="0.01" oninput="calculateCGPA()">
+
+<input type="number" id="semester4" placeholder="Semester 4 GPA" step="0.01" oninput="calculateCGPA()">
+
+<input type="number" id="semester5" placeholder="Semester 5 GPA" step="0.01" oninput="calculateCGPA()">
+
+<input type="number" id="semester6" placeholder="Semester 6 GPA" step="0.01" oninput="calculateCGPA()">
+
+<input type="number" id="semester7" placeholder="Semester 7 GPA" step="0.01" oninput="calculateCGPA()">
+
+<input type="number" id="semester8" placeholder="Semester 8 GPA" step="0.01" oninput="calculateCGPA()">
+
+<div class="result-box">
+
+<p>Your CGPA</p>
+
+<h2 id="cgpaResult">
+0.00
+</h2>
+
+</div>
+
+</div>
+
+<footer>
+
+Made by <b>Amna Ashraf</b>
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
